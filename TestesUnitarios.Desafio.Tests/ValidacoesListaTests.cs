@@ -51,15 +51,15 @@ public class ValidacoesListaTests
     [Fact]
     public void DeveMultiplicarOsElementosDaListaPor2()
     {
-        // Arrange
+        
         var lista = new List<int> { 5, 7, 8, 9 };
         var resultadoEsperado = new List<int> { 10, 14, 16, 18 };
 
-        // Act
-        var resultado = _validacoes.RetornarMaiorNumeroLista(lista);
+        // atribuir valor a resultado, multiplicando por 2
+        var resultado = _validacoes.MultiplicarNumerosLista(lista, 2);
 
         // Assert
-        Assert.Equal(resultadoEsperado, lista);
+        Assert.Equal(resultadoEsperado, resultado);
     }
 
     [Fact]
